@@ -1,0 +1,86 @@
+{
+  "header": {
+    "blocks": []
+  },
+  "header.full": {
+    "blocks": []
+  },
+  "header-layout.desktop": {
+    "children": [
+    ]
+  },
+
+  "header-row#1-desktop": {
+    "children": [],
+    "props": {
+      "fullWidth": true
+    }
+  },
+
+  "header-row#2-desktop": {
+    "children": [],
+    "props": {
+      "fullWidth": "true"
+    }
+  },
+  "notification.bar#home": {
+    "props": {
+      "content": "SELECTED ITEMS ON SALE! CHECK IT OUT!"
+    }
+  },
+  "header-row#3-desktop": {
+    "children": [
+    ],
+    "props": {
+      "blockClass": "menu-link",
+      "inverted": "true"
+    }
+  },
+  "header-row#4-desktop": {
+    "children": [
+    ],
+    "props": {
+      "sticky": true,
+      "blockClass": "main-header"
+    }
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
+      "width": "180"
+    }
+  },
+  "header-layout.mobile": {
+    "children": []
+  },
+  "header-row#1-mobile": {
+    "children": [
+    ],
+    "props": {
+      "sticky": true,
+      "blockClass": "main-header-mobile"
+    }
+  },
+  "drawer": {
+    "children": []
+  },
+
+  "menu#drawer": {
+    "children": [
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
+      "width": "70"
+    }
+  }
+}
