@@ -1,0 +1,91 @@
+{
+  "newsletter-form": {
+    "children": [
+      "rich-text#newsletter-title",
+      "flex-layout.row#newsletter-inputs"
+      // "newsletter-hidden-field"
+    ],
+    "props": {
+      "SuccessState": "flex-layout.row#newsletter-success"
+    }
+  },
+
+  // "newsletter-hidden-field": {
+  //   "props": {
+  //     "customFields": [
+  //       {
+  //         "fieldName": "bindingId",
+  //         "dynamicValue": "bindingId"
+  //       },
+  //       {
+  //         "fieldName": "bindingUrl",
+  //         "dynamicValue": "bindingUrl"
+  //       },
+  //       {
+  //         "fieldName": "iae",
+  //         "value": "boy"
+  //       }
+  //     ]
+  //   }
+  // },
+
+  "rich-text#newsletter-title": {
+    "props": {
+      "text": "## Subscribe to our newsletter",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "newsletterTitle"
+    }
+  },
+
+  "flex-layout.row#newsletter-inputs": {
+    "children": [
+      "newsletter-input-email",
+      "newsletter-input-name",
+      "newsletter-submit"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true
+    }
+  },
+
+  "flex-layout.row#newsletter-success": {
+    "children": ["rich-text#newsletter-success"]
+  },
+
+  "rich-text#newsletter-success": {
+    "title": "Newsletter success message",
+    "props": {
+      "text": "## Thanks!\n You're now subscribed!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "newsletter-input-email": {
+    "props": {
+      "placeholderText": "Enter your email address",
+      "errorMessage": "Invalid email"
+    }
+  },
+
+  "newsletter-input-name": {
+    "props": {
+      "placeholderText": "First name",
+      "errorMessage": "This field cannot be empty"
+    }
+  },
+
+  "newsletter-input-phone": {
+    "props": {
+      "placeholderText": "Phone"
+    }
+  },
+
+  "newsletter-submit": {
+    "props": {
+      "submitButtonLabel": "Subscribe"
+    }
+  }
+}
