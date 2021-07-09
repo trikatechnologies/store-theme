@@ -1,0 +1,620 @@
+{
+  "store.home": {
+    "blocks": [
+      "carousel#home",
+      "shelf#home"
+    ]
+  },
+  "store.product": {
+    "blocks": [
+      "product-rating-summary",
+      "product-details#default",
+      "product-kit",
+      "shelf.relatedProducts",
+      "product-reviews",
+      "product-questions-and-answers"
+    ]
+  },
+  "product-summary.shelf": {
+    "children": [
+      "product-summary-image",
+      "product-rating-inline",
+      "product-summary-price",
+      "product-summary-name",
+      "product-summary-description",
+      "product-summary-buy-button"
+    ]
+  },
+  "search-result": {
+    "blocks": [
+      "filter-navigator",
+      "search-title",
+      "gallery",
+      "not-found",
+      "breadcrumb",
+      "total-products",
+      "order-by"
+    ]
+  },
+  "gallery": {
+    "blocks": [
+      "product-summary.shelf"
+    ]
+  },
+  "store.search": {
+    "blocks": [
+      "search-result"
+    ]
+  },
+  "store.search#brand": {
+    "blocks": [
+      "search-result"
+    ]
+  },
+  "store.search#department": {
+    "blocks": [
+      "search-result#department"
+    ]
+  },
+  "store.search#category": {
+    "blocks": [
+      "search-result"
+    ]
+  },
+  "store.search#subcategory": {
+    "blocks": [
+      "search-result"
+    ]
+  },
+  "store.account": {
+    "blocks": [
+      "my-account"
+    ],
+    "parent": {
+      "challenge": "challenge.profile"
+    }
+  },
+  "store.login": {
+    "blocks": [
+      "login-content#default"
+    ]
+  },
+  "header": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header.full": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "header-row#1-desktop",
+      "header-row#2-desktop",
+      "header-row#3-desktop",
+      "header-row#4-desktop"
+    ]
+  },
+  "header-row#1-desktop": {
+    "children": [
+      "telemarketing"
+    ],
+    "props": {
+      "fullWidth": true
+    }
+  },
+  "header-row#2-desktop": {
+    "children": [
+      "vtex.menu@2.x:menu#number1",
+      "header-spacer",
+      "vtex.menu@2.x:menu#number2"
+    ]
+  },
+  "vtex.menu@2.x:menu#number1": {
+    "children": [
+      "menu-item#number1"
+    ]
+  },
+  "menu-item#number1": {
+    "props": {
+      "id": "menu-item-number1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Example 1",
+        "text": "Example 1"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#number2": {
+    "children": [
+      "menu-item#number2-1",
+      "menu-item#number2-2"
+    ]
+  },
+  "menu-item#number2-1": {
+    "props": {
+      "id": "menu-item-number2-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Example 2-1",
+        "text": "Example 2-1"
+      }
+    }
+  },
+  "menu-item#number2-2": {
+    "props": {
+      "id": "menu-item-number2-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Example 2-2",
+        "text": "Example 2-2"
+      }
+    }
+  },
+  "header-row#3-desktop": {
+    "children": [
+      "header-spacer",
+      "search-bar",
+      "login",
+      "minicart"
+    ]
+  },
+  "header-row#4-desktop": {
+    "children": [
+      "logo",
+      "vtex.menu@2.x:menu#categories"
+    ],
+    "props": {
+      "sticky": true
+    }
+  },
+  "vtex.menu@2.x:menu#categories": {
+    "children": [
+      "menu-item#category-1",
+      "menu-item#category-2",
+      "menu-item#category-3",
+      "menu-item#category-custom"
+    ]
+  },
+  "menu-item#category-1": {
+    "props": {
+      "id": "menu-item-category-1",
+      "type": "category",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 1
+      }
+    }
+  },
+  "menu-item#category-2": {
+    "props": {
+      "id": "menu-item-category-2",
+      "type": "category",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 2
+      }
+    }
+  },
+  "menu-item#category-3": {
+    "props": {
+      "id": "menu-item-category-3",
+      "type": "category",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "categoryId": 3
+      }
+    }
+  },
+  "menu-item#category-custom": {
+    "props": {
+      "id": "menu-item-category-custom",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Custom Category",
+        "text": "Custom Category"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#category-custom"
+    ]
+  },
+  "vtex.menu@2.x:submenu#category-custom": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#category-custom"
+    ]
+  },
+  "vtex.menu@2.x:menu#category-custom": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-custom-1",
+      "menu-item#category-custom-2",
+      "menu-item#category-custom-3"
+    ]
+  },
+  "menu-item#category-custom-1": {
+    "props": {
+      "id": "menu-item-category-custom-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Custom Category 1",
+        "text": "Custom Category 1"
+      }
+    }
+  },
+  "menu-item#category-custom-2": {
+    "props": {
+      "id": "menu-item-category-custom-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Custom Category 2",
+        "text": "Custom Category 2"
+      }
+    }
+  },
+  "menu-item#category-custom-3": {
+    "props": {
+      "id": "menu-item-category-custom-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Custom Category 3",
+        "text": "Custom Category 3"
+      }
+    }
+  },
+  "menu-link": {
+    "props": {
+      "numberOfItems": 6,
+      "item1": {
+        "title": "Atendimento",
+        "typeOfRoute": "internal",
+        "page": "store/home",
+        "position": "right"
+      },
+      "item2": {
+        "title": "Programa de Afiliados",
+        "typeOfRoute": "internal",
+        "position": "middle"
+      },
+      "item3": {
+        "title": "Anuncie",
+        "typeOfRoute": "internal",
+        "position": "middle"
+      },
+      "item4": {
+        "title": "Televendas 4003-2018",
+        "typeOfRoute": "internal",
+        "position": "left"
+      },
+      "item5": {
+        "title": "Sobre",
+        "typeOfRoute": "internal",
+        "position": "right"
+      }
+    }
+  },
+  "footer": {
+    "props": {
+      "showPaymentFormsInColor": false,
+      "showSocialNetworksInColor": false,
+      "socialNetworks": [
+        {
+          "__editorItemTitle": "Facebook",
+          "socialNetwork": "Facebook"
+        }
+      ],
+      "sectionLinks": [
+        {
+          "__editorItemTitle": "Institutional",
+          "title": "Institutional",
+          "links": [
+            {
+              "__editorItemTitle": "Extended warranty",
+              "title": "Extended warranty"
+            },
+            {
+              "__editorItemTitle": "Investor relations",
+              "title": "Investor relations"
+            },
+            {
+              "__editorItemTitle": "Work with us",
+              "title": "Work with us"
+            },
+            {
+              "__editorItemTitle": "Privacy policy",
+              "title": "Privacy policy"
+            }
+          ]
+        },
+        {
+          "__editorItemTitle": "Support",
+          "title": "Support",
+          "links": [
+            {
+              "__editorItemTitle": "Attendance",
+              "title": "Attendance"
+            },
+            {
+              "__editorItemTitle": "Exchanges and Returns",
+              "title": "Exchanges and Returns"
+            },
+            {
+              "__editorItemTitle": "Chat",
+              "title": "Chat"
+            }
+          ]
+        },
+        {
+          "__editorItemTitle": "Our Card",
+          "title": "Our Card",
+          "links": [
+            {
+              "__editorItemTitle": "Ask for yours now!",
+              "title": "Ask for yours now!"
+            },
+            {
+              "__editorItemTitle": "Promotions",
+              "title": "Promotions"
+            },
+            {
+              "__editorItemTitle": "Miles Program",
+              "title": "Miles Program"
+            },
+            {
+              "__editorItemTitle": "Benefits",
+              "title": "Benefits"
+            }
+          ]
+        }
+      ],
+      "badges": [
+        {
+          "__editorItemTitle": "Medalha"
+        }
+      ],
+      "paymentForms": [
+        {
+          "__editorItemTitle": "Credit",
+          "title": "Credit",
+          "paymentTypes": [
+            "MasterCard",
+            "Visa",
+            "Diners Club"
+          ]
+        },
+        {
+          "__editorItemTitle": "Debit",
+          "title": "Debit",
+          "paymentTypes": [
+            "MasterCard",
+            "Visa",
+            "Diners Club"
+          ]
+        }
+      ],
+      "storeInformations": [
+        {
+          "__editorItemTitle": "Information",
+          "storeInformation": "This is an example store for testing purposes only"
+        },
+        {
+          "__editorItemTitle": "Address",
+          "storeInformation": "300 Street Name - 2º Floor - Neighborhood, City - State, 99999 - VTEX. "
+        }
+      ]
+    }
+  },
+  "carousel#home": {
+    "props": {
+      "autoplay": true,
+      "autoplaySpeed": 4,
+      "banners": [],
+      "height": 440,
+      "showArrows": true,
+      "showDots": true
+    }
+  },
+  "shelf#home": {
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "productList": {
+        "maxItems": 10,
+        "itemsPerPage": 4,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "titleText": "Top sellers",
+        "summary": {
+          "isOneClickBuy": false,
+          "showBadge": true,
+          "badgeText": "OFF",
+          "buyButtonText": "Add to cart",
+          "displayBuyButton": "displayButtonAlways",
+          "showCollections": false,
+          "showListPrice": true,
+          "showLabels": false,
+          "showInstallments": true,
+          "showSavings": true,
+          "name": {
+            "showBrandName": false,
+            "showSku": false,
+            "showProductReference": false
+          }
+        }
+      }
+    }
+  },
+  "product-details#default": {
+    "blocks": [
+      "breadcrumb",
+      "product-name",
+      "product-images",
+      "product-price",
+      "product-description",
+      "product-specifications",
+      "buy-button",
+      "sku-selector",
+      "shipping-simulator",
+      "availability-subscriber",
+      "share"
+    ],
+    "props": {
+      "displayVertically": true,
+      "share": {
+        "social": {
+          "Facebook": true,
+          "WhatsApp": true,
+          "Twitter": false
+        }
+      },
+      "price": {
+        "labelSellingPrice": null,
+        "showListPrice": true,
+        "showLabels": true,
+        "showInstallments": true,
+        "showSavings": true
+      },
+      "name": {
+        "showBrandName": false,
+        "showSku": false,
+        "showProductReference": false
+      }
+    }
+  },
+  "search-result#department": {
+    "blocks": [
+      "filter-navigator",
+      "gallery",
+      "not-found",
+      "breadcrumb",
+      "order-by",
+      "total-products"
+    ],
+    "props": {
+      "querySchema": {
+        "maxItemsPerPage": 2,
+        "orderByField": "OrderByReleaseDateDESC"
+      },
+      "hiddenFacets": {
+        "layoutMode1": "normal",
+        "layoutMode2": "small",
+        "specificationFilters": {
+          "hiddenFilters": [
+            {
+              "__editorItemTitle": "editor.search-result.hiddenFacets.specificationFilters.hiddenFilter"
+            }
+          ]
+        }
+      },
+      "summary": {
+        "isOneClickBuy": false,
+        "showBadge": true,
+        "displayBuyButton": "displayButtonAlways",
+        "showCollections": false,
+        "labelSellingPrice": null,
+        "showListPrice": true,
+        "showLabels": true,
+        "showInstallments": false,
+        "showSavings": false,
+        "name": {
+          "showBrandName": false,
+          "showSku": false,
+          "showProductReference": false
+        }
+      },
+      "pagination": "show-more"
+    }
+  },
+  "minicart": {
+    "blocks": [
+      "product-summary"
+    ],
+    "props": {
+      "type": "popup",
+      "showRemoveButton": true,
+      "showDiscount": true,
+      "showSku": true,
+      "labelMiniCartEmpty": "",
+      "labelButtonFinishShopping": "Go to checkout",
+      "enableQuantitySelector": true,
+      "maxQuantity": 10,
+      "labelClasses": "gray"
+    }
+  },
+  "login": {
+    "props": {
+    }
+  },
+  "login-content#default": {
+    "props": {
+      "isInitialScreenOptionOnly": false,
+      "defaultOption": 1,
+      "showPasswordVerificationIntoTooltip": true
+    }
+  },
+  "logo": {
+    "props": {
+      "title": "Logo",
+      "href": "/"
+    }
+  },
+  "info-card#home": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": true,
+      "imageUrl": "https://storecomponents.vteximg.com.br/assets/vtex.file-manager-graphql/images/mobile_coats2___8822bcd600b41a78ce763f6db9883f03.png",
+      "headline": "SITEWIDE SAVINGS!",
+      "subhead": "EXTRA 35% OFF*",
+      "callToActionText": "Shop Now"
+      }
+  }
+}
