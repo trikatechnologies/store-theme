@@ -1,0 +1,16 @@
+.headerRowBackground--discount  {
+  background-color: #142032;
+}
+
+.headerRowBackground--discount .headerRowContainer {
+  justify-content: center;
+}
+
+.headerRow--main-header :global(.vtex-menu-2-x-styledLink)  {
+  font-size: 14px;
+}
+
+.headerRow--main-header-mobile .headerRowBackground {
+  padding: 10px 0px;
+  background-color: #F0F0F0;
+}

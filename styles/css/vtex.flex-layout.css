@@ -1,0 +1,26 @@
+.flexRow--deals {
+  background-color: #a7afbd;
+  padding: 14px 0px;
+}
+
+.flexRow--deals  .stretchChildrenWidth {
+  align-items: center;
+}
+
+.flexRow--teto {
+  margin: 90px 0px;
+}
+
+.flexCol--imagemTeto {
+  align-items: flex-end;
+}
+
+.flexCol--textoTeto {
+  align-items: flex-start;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.flexCol--textoTeto > div {
+  height: auto !important;
+}
