@@ -1,0 +1,17 @@
+.promotion .infoCardContainer {
+  max-width: 1520px;
+  margin: 0 auto;
+  background-color: #e6f1e6;
+  padding: 0px;
+}
+
+@media only screen and (min-width: 640px) {
+  .promotion .infoCardContainer .infoCardTextContainer {
+    width: 30%;
+  }
+
+  .promotion .infoCardContainer .infoCardImageContainer {
+    width: 70%;
+  }
+
+}

@@ -1,0 +1,12 @@
+{
+  "store.home": {
+    "blocks": [
+      "carousel-block",
+      "highlights",
+      "shelf-block",
+      "promotion",
+      "store-context",
+      "vtex.store-theme@3.x:newsletter"
+    ]
+  }
+}
