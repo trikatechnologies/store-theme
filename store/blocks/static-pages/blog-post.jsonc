@@ -1,0 +1,11 @@
+{
+  "store.blog-post":{
+      "blocks":["flex-layout.row#blog-post"]
+  },
+  "flex-layout.row#blog-post":{
+      "children":["blog-post-details.wordpress-post-details"],
+      "props":{
+          "blockClass":"blog-post"
+      }
+    }
+}

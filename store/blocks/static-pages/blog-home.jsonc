@@ -1,0 +1,17 @@
+{
+    "store.blog-home":{
+        "blocks":["flex-layout.row#blog-home"]
+    },
+    "flex-layout.row#blog-home":{
+        "children":["rich-text#section-1-blog-home"],
+        "props":{
+            "blockClass":"blog-home"
+        }
+    },
+    "rich-text#section-1-blog-home":{
+        "props":{
+            "text":"#### Home page for blog",
+            "blockClass":"section-1-blog-home"
+        }
+    }
+}

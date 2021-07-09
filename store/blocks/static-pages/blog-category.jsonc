@@ -1,0 +1,11 @@
+{
+    "store.blog-category":{
+      "blocks":["blog-category-list.wordpress-category-list"]
+    },
+    "blog-category-list.wordpress-category-list": {
+      "props":{
+        "text":"military",
+        "blockClass":"section-2-blog-category"
+      }
+    }
+  }
