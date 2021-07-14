@@ -169,7 +169,7 @@
     "props": {
       "blockClass": "message-availability"
     },
-    "children": ["availability-subscriber"]
+    "children": ["availability-notify"]
   },
 
   "share#default": {
